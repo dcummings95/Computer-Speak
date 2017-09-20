@@ -1,0 +1,5 @@
+[Void]
+[Reflection.Assembly]::LoadWithPartialName("System.Speech")
+$voice = New-Object System.Speech.Synthesis.SpeechSynthesizer
+$text = "text"
+$voice.speak($text)
